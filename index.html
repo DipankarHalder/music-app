@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>HTML5 Audio Player</title>
+        <link type="text/css" rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <section class="bgContainer">
+            <div class="innerCover">
+
+                <!-- audio image information -->
+                <div id="audio-img">
+                    <img class="audio-cover">
+                </div>
+
+                <!-- audio player information -->
+                <div id="audio-player">
+
+                    <!-- audio information -->
+                    <div id="audio-info">
+                        <span class="audio-title"></span>
+                        <span class="audio-artist"></span>
+                    </div>
+
+                    <!-- audio range -->
+                    <input id="audio-volumn" type="range" min="0" max="20" value="3">
+
+                    <!-- audio buttons -->
+                    <div id="audio-buttons">
+                        <button id="prev"></button>
+                        <button id="play"></button>
+                        <button id="pause"></button>
+                        <button id="stop"></button>
+                        <button id="next"></button>
+                    </div>
+
+                    <!-- audio progressbar -->
+                    <div id="audio-tracker">
+                        <div id="audio-progressbar">
+                            <span id="progress"></span>
+                        </div>
+                        <span id="audio-duration"></span>
+                    </div>
+
+                    <!-- audio playlist -->
+                    <ul id="audio-playlist">
+                        <li song="list - Bulleya.mp3" cover="cover.jpg" artist="Amit Mishra">Bulleya.mp3</li>
+                        <li song="list - Ae Dil Hai Mushkil.mp3" cover="cover1.jpg" artist="Amit Mishra">Ae Dil Hai Mushkil.mp3</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/function.js"></script>
+    </body>
+</html>
